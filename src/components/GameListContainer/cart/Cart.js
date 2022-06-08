@@ -27,12 +27,13 @@ const Cart = () => {
                             <div className="card-description" id="card-desc">
                                 <p className="card-text">{c.game.description}</p>
                             </div>
-                            <div>
-                                <p className="cantidad">
+                            <div className="num-container">
+                                <div className="cantidad">
                                     {`Cantidad: `}{c.count}
-                                    <br></br>
+                                </div>
+                                <div className="precio">
                                     {`Precio: $`}{c.game.price}
-                                </p>
+                                </div>
                             </div>
                             <button className="btn btn-primary" onClick={() => { removeFromCart(c.game.id) }}>
                                 <span className="material-symbols-outlined">
