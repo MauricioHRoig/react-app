@@ -7,7 +7,7 @@ import { GameContainer } from './components/GameListContainer/GameContainer';
 import GameDetailItem from './components/GameListContainer/GameDetail/GameDetailItem';
 import CartProvider from './context/cartContext';
 import Cart from "./components/GameListContainer/cart/Cart"
-import Form from './components/GameListContainer/form/Form';
+import Checkout from './components/GameListContainer/form/Checkout';
 
 function App() {
 
@@ -21,7 +21,7 @@ function App() {
             <Route path="/" element={<GameContainer />}></Route>
             <Route path="/category/:categoryId" element={<GameContainer />}></Route>
             <Route path="/game/:gameId" element={<GameDetailItem stock={5} initial={1} />}></Route>
-            <Route path="/form" element={<Form />}></Route>
+            <Route path="/checkout" element={<Checkout />}></Route>
           </Routes>
         </div>
         <Footer />
